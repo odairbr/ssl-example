@@ -5,9 +5,9 @@ SSL certificate study
 
 ```shell
 openssl req -x509 \
-            -sha256 -days 356 \
+            -sha256 -days 365 \
             -nodes \
             -newkey rsa:2048 \
-            -subj "/CN=localhost.spec/C=BR/L=São Paulo" \
-            -keyout rootCA.key -out rootCA.crt
+            -subj "/CN=localhost/C=BR/ST=São Paulo/L=São Paulo/O=Test SSL" \
+            -keyout certificates/localhost.key -out certificates/localhost.crt
 ```
