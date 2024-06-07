@@ -4,7 +4,7 @@ SSL certificate study
 ## Generate certificate
 
 - server certificate
-```shell
+```bash
 openssl req -x509 \
             -sha256 -days 365 \
             -nodes \
@@ -14,7 +14,7 @@ openssl req -x509 \
 ```
 
 - client certificate
-```shell
+```bash
 openssl req -x509 \
             -sha256 -days 365 \
             -nodes \
